@@ -9,5 +9,4 @@ public class CiCdExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CiCdExampleApplication.class, args);
 	}
-
 }

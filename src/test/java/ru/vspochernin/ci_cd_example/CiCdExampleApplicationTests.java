@@ -9,5 +9,4 @@ class CiCdExampleApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
