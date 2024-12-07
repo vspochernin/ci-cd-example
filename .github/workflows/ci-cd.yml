@@ -24,8 +24,8 @@ jobs:
             - name: Archive build
               uses: actions/upload-artifact@v4
               with:
-                  name: my-app
-                  path: target/*.jar
+                  name: build-artifacts
+                  path: target/
 
     test:
         runs-on: ${{ matrix.os }}
@@ -46,7 +46,7 @@ jobs:
             - name: Download build artifact
               uses: actions/download-artifact@v4
               with:
-                  name: my-app
+                  name: build-artifacts
                   path: target/
 
             - name: Run tests
