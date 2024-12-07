@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calculator {
 
+    @RequestMapping("/")
+    public String helloWorld() {
+        return "Hello World!";
+    }
+
     @RequestMapping("/plus")
     public long plus(@RequestParam long a, @RequestParam long b) {
         return a + b;
